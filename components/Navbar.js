@@ -14,7 +14,7 @@ const Navbar = () => {
         <>
             <nav className="flex justify-between items-center px-20 p-8 bg-[#eff4fb]">
                 <Link href="/">
-                    <div className="logo font-bold text-2xl">OTT/Logo</div>
+                    <div className="logo font-bold text-2xl">OTT</div>
                 </Link>
                 <ul className="hidden md:flex items-center justify-center gap-4 font-bold text-xl">
                     <Link href="/">
