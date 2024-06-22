@@ -9,12 +9,12 @@ const Page = async ({ params }) => {
   const options = {
     method: 'GET',
     headers: {
-      // df9bb9f2b6mshb63d5be6104d6bcp131b6fjsn380d75ded21f
+      
       'x-rapidapi-key': process.env.rapidapi_key,
       'x-rapidapi-host': 'netflix54.p.rapidapi.com',
     },
   };
-  // , {cache:"no-cache" , headers: {'x-rapidapi-key': 'df9bb9f2b6mshb63d5be6104d6bcp131b6fjsn380d75ded21f' }}
+
   try {
     const response = await fetch(url, options);
     const result = await response.json();
