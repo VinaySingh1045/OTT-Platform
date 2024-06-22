@@ -2,9 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 const Page = async ({ params }) => {
-  const episodeId = params.id; // The ID from the URL parameter
-  // console.log(episodeId);
-  const url = `https://netflix54.p.rapidapi.com/title/details/?ids=${episodeId}&lang=en`; // Using a season ID to fetch data
+  const episodeId = params.id; 
+  const url = `https://netflix54.p.rapidapi.com/title/details/?ids=${episodeId}&lang=en`; 
 
   const options = {
     method: 'GET',
@@ -18,12 +17,10 @@ const Page = async ({ params }) => {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
-    // console.log('API Response:', result);
 
     return (
       <div className="mb-40 p-4">
         <h2 className="text-3xl mb-5 font-semibold text-center">Type/Show</h2>
-        {/* <h1>{result[0].titleId}</h1> */}
         <div className="flex flex-col justify-around items-center gap-4">
           <img
             src={result[0].details.backgroundImage.url}
@@ -34,7 +31,6 @@ const Page = async ({ params }) => {
           <div className="text-center lg:text-left">
             <h1 className="text-xl font-sm mb-2 text-center">
               {result[0].details.synopsisRegular}
-              {/* {result[0].details.contextualSynopsis.text} */}
             </h1>
             <p className="text-gray-600 font-semibold text-center ">
               {result[0].details.synopsisRegular}

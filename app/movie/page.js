@@ -1,7 +1,5 @@
 import MovieCard from '@/components/MovieCard';
 import React from 'react'
-import { resolve } from 'styled-jsx/css';
-import Loading from '../Loading';
 
 const Movie = async () => {
 // console.log(params.id);
