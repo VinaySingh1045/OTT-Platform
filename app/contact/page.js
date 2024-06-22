@@ -7,7 +7,7 @@ import { MdEmail, MdVoiceChat, MdForum } from "react-icons/md"
 const Contact = () => {
   return (
     <>
-      <h1 className=' flex justify-center items-center text-4xl font-bold mt-6 ' >Contact Us</h1>
+      <h1 className='flex justify-center items-center text-4xl font-bold mt-6' >Contact Us</h1>
       <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-14 mx-auto w-[90%] p-8'>
         <ContactCard iconn={<MdEmail />} h2={"Email"} p1={"Monday to Friday Excepted"} p2={"response time: 72 hours"} lin={"Send Mail"} />
         <ContactCard iconn={<MdVoiceChat />} h2={"Live Chat"} p1={"Weekdays: 9AM to 6PM ET"} p2={"Weekends: 9AM to 3PM ET"} lin={"Chat Now"} />
