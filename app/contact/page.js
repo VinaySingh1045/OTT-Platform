@@ -15,7 +15,7 @@ const Contact = () => {
       </div>
       <div>
         <h1 className='flex flex-col sm:flex-row sm:justify-center sm:items-center text-4xl font-bold my-8 text-center'>
-          We'd love to hear&nbsp;<span className='text-blue-500'>from you</span>
+          We&apos;d love to hear&nbsp;<span className='text-blue-500'>from you</span>
         </h1>
 
         <ContactForm />
